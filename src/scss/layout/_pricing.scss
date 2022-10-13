@@ -1,0 +1,44 @@
+.pricing {
+  height: 100vh;
+  background-color: $color-bkg-ftr;
+  color: $color-white;
+  font-family: $font-main;
+  padding: 3rem 1.5rem 3rem 1.5rem;
+
+  &__main {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-family: $font-sub;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+
+  &__main {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 1.7rem;
+
+    &-sub {
+      font-size: 1.8rem;
+      text-align: center;
+      line-height: 1.3;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing {
+    padding: 3rem 3rem 3rem 3rem;
+  }
+  .plans {
+    flex-direction: row;
+  }
+}
